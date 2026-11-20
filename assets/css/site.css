@@ -38,51 +38,51 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0a0a0a;
-    --bg-blur: rgba(10, 10, 10, .78);
-    --surface: #141414;
-    --surface-2: #1c1c1c;
-    --ink: #ededed;
-    --ink-2: #a3a3a3;
-    --ink-3: #737373;
-    --rule: #232323;
-    --rule-2: #303030;
+    --bg: #0e1117;
+    --bg-blur: rgba(14, 17, 23, .75);
+    --surface: #151a22;
+    --surface-2: #1c222c;
+    --ink: #e7eaf0;
+    --ink-2: #a2abba;
+    --ink-3: #6f7889;
+    --rule: #232a35;
+    --rule-2: #2e3643;
     --link: #8fb0ff;
-    --link-2: #b3c8ff;
-    --link-soft: #1b1b1d;
+    --link-2: #a9c2ff;
+    --link-soft: #18213a;
     --green: #63d293;
     --green-fill: #2fae68;
-    --green-soft: #0f1d15;
+    --green-soft: #142a1e;
     --warn: #e6b65e;
-    --warn-soft: #1f1a10;
-    --dot: rgba(255, 255, 255, .07);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
-    --shadow-lg: 0 1px 1px rgba(0, 0, 0, .4), 0 6px 14px rgba(0, 0, 0, .45), 0 20px 48px rgba(0, 0, 0, .6);
+    --warn-soft: #2a2213;
+    --dot: rgba(231, 234, 240, .07);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+    --shadow-lg: 0 1px 1px rgba(0, 0, 0, .2), 0 6px 14px rgba(0, 0, 0, .25), 0 20px 48px rgba(0, 0, 0, .35);
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #0a0a0a;
-  --bg-blur: rgba(10, 10, 10, .78);
-  --surface: #141414;
-  --surface-2: #1c1c1c;
-  --ink: #ededed;
-  --ink-2: #a3a3a3;
-  --ink-3: #737373;
-  --rule: #232323;
-  --rule-2: #303030;
+  --bg: #0e1117;
+  --bg-blur: rgba(14, 17, 23, .75);
+  --surface: #151a22;
+  --surface-2: #1c222c;
+  --ink: #e7eaf0;
+  --ink-2: #a2abba;
+  --ink-3: #6f7889;
+  --rule: #232a35;
+  --rule-2: #2e3643;
   --link: #8fb0ff;
-  --link-2: #b3c8ff;
-  --link-soft: #1b1b1d;
+  --link-2: #a9c2ff;
+  --link-soft: #18213a;
   --green: #63d293;
   --green-fill: #2fae68;
-  --green-soft: #0f1d15;
+  --green-soft: #142a1e;
   --warn: #e6b65e;
-  --warn-soft: #1f1a10;
-  --dot: rgba(255, 255, 255, .07);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
-  --shadow-lg: 0 1px 1px rgba(0, 0, 0, .4), 0 6px 14px rgba(0, 0, 0, .45), 0 20px 48px rgba(0, 0, 0, .6);
+  --warn-soft: #2a2213;
+  --dot: rgba(231, 234, 240, .07);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+  --shadow-lg: 0 1px 1px rgba(0, 0, 0, .2), 0 6px 14px rgba(0, 0, 0, .25), 0 20px 48px rgba(0, 0, 0, .35);
   color-scheme: dark;
 }
 
