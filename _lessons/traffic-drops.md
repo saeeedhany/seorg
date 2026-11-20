@@ -18,6 +18,17 @@ check:
     a: In measurement. The Analytics tag or consent setup probably broke, or a change in channel grouping moved traffic elsewhere. Search continues to send visitors.
   - q: Rankings fell during a core update. Should you remove all affected pages?
     a: No. First compare your pages with what now ranks and assess them honestly against Google's helpful content questions. Improve, merge or remove only where the content truly falls short.
+practice:
+  title: Rehearse a traffic drop diagnosis
+  time: 30 minutes
+  tools: Search Console, Google Search Status Dashboard
+  steps:
+  - In Search Console **Performance**, find the largest dip in clicks in the last 16 months, even a small one.
+  - Compare the week of the dip with the week before, and break it down by page, query, device and country.
+  - Check the Search Status Dashboard for updates that overlapped with the dip, and Google Trends for changes in demand.
+  - 'Write a three sentence diagnosis: what dropped, the most likely cause, and what you would check next.'
+  done: You have a written diagnosis that someone else could follow and test.
+  alt: Use the **Google Analytics demo account** to find a dip in traffic, then compare its dates with the Search Status Dashboard.
 ---
 
 ## Step 1: confirm the drop is real

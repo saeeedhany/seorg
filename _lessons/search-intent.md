@@ -19,6 +19,16 @@ check:
     a: Create or improve a page that fits the intent, such as an honest comparison, and link it to your product. A single product page is the wrong format for a query where searchers are still comparing options.
   - q: What intent does "monday vs asana" have, and what page fits it?
     a: Commercial intent at the final comparison stage. The searcher has a shortlist of two. A focused, fair comparison of those two tools, with clear differences and who each one suits, fits best.
+practice:
+  title: Write a one sentence brief from a results page
+  time: 20 minutes
+  tools: A browser in a private window
+  steps:
+  - Choose one search you want a page to rank for.
+  - Study the top five results and note their format, depth, angle and how recent they are.
+  - Read the People also ask questions and one forum thread on the topic.
+  - Write one sentence that says what your page will do for this searcher. Then compare it with your current page, if you have one.
+  done: You have a one sentence brief, and a list of what your current page lacks compared with what searchers clearly want.
 ---
 
 ## The four common intents

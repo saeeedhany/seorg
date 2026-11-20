@@ -16,6 +16,17 @@ check:
     a: Not necessarily. You probably started appearing for many new queries in low positions, which pulls the average down. Check positions for your important queries and pages instead.
   - q: Search Console reports 1,000 clicks and Analytics reports 820 organic sessions for the same week. Which is wrong?
     a: Neither, necessarily. The tools count different things in different ways. Analytics misses visitors who decline cookies or block scripts, and it groups visits into sessions. Compare trends within each tool rather than matching the numbers exactly.
+practice:
+  title: Build your one page baseline
+  time: 30 minutes
+  tools: Search Console, Google Analytics 4
+  steps:
+  - In Search Console **Performance**, compare the last 3 months with the previous 3 months. Record clicks, impressions, CTR and average position.
+  - Record the top five pages and top five queries by clicks.
+  - Open the **Generative AI** report and note how often your pages appeared in AI Overviews and AI Mode.
+  - In Google Analytics 4, record organic search sessions and key events for the same period.
+  done: You have a single page with these numbers and today's date. Update it every month.
+  alt: Open Google's free **Google Analytics demo account** for the Google Merchandise Store and do step 4 there.
 ---
 
 ## Google Search Console

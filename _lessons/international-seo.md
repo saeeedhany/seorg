@@ -16,6 +16,17 @@ check:
     a: Google may ignore the annotation, because hreflang must be confirmed in both directions. Each page must reference every alternate and itself.
   - q: Which hreflang value targets Spanish speakers in Mexico, and what does x-default mean?
     a: es-MX, which is the language code followed by the region code. x-default marks the page to show when no other version matches the searcher, often a language selector or the main international page.
+practice:
+  title: Check hreflang on one page
+  time: 20 minutes
+  tools: A browser
+  steps:
+  - Open the page source and list every `hreflang` annotation, with its language code and URL.
+  - Open each alternate URL and check that it returns 200, is in the right language, and lists the same set of annotations, including itself.
+  - Check that an `x-default` is present and points to a sensible fallback page.
+  - Use the language selector on the page and check that it links to the equivalent page, not just the home page.
+  done: Every annotation is reciprocal, points to a live canonical URL, and uses a valid code.
+  alt: Do this on a large international brand's site that offers several languages or countries.
 ---
 
 ## When this applies

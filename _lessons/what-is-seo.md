@@ -16,6 +16,17 @@ check:
     a: Nobody can guarantee a ranking, because Google decides rankings and changes its systems constantly. Google's own guidance warns site owners to be wary of anyone who promises one. You can promise a process and measurable improvements, not a position.
   - q: Which area of SEO is responsible for making sure Google can fetch and store a page at all?
     a: Technical SEO. If a page cannot be crawled or indexed, its content and links never get a chance to count.
+practice:
+  title: Write down where your site stands today
+  time: 15 minutes
+  tools: A browser in a private window
+  steps:
+  - Search for your site or brand name. Note whether your site is the first organic result and what else appears.
+  - Search `site:yourdomain.com` and skim the results. Note anything that should not be public, such as test pages or old campaigns.
+  - Search the two or three topics your site is mainly about. Note your position in the first 20 organic results, or that you are not there.
+  - On each of those results pages, mark which results are ads (labeled Sponsored) and which are organic.
+  done: 'You have a short note with your brand result, your rough position for your main topics, and anything odd you found. Keep it: it is your baseline for the rest of the course.'
+  alt: Do the same for a local business or a small blog you know well.
 ---
 
 ## The short definition

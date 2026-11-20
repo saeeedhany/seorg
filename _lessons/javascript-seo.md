@@ -17,6 +17,17 @@ check:
     a: Google sees a soft 404. Either have the server return a real 404 status for that route, or add a `noindex` robots meta tag in the not found view.
   - q: Why might content that Google indexes fine still be missing from other search engines or AI tools?
     a: Many crawlers fetch only the initial HTML and do not run JavaScript. If the content appears only after scripts run, they never see it. Server rendering fixes this for all of them.
+practice:
+  title: Compare the raw HTML with what Google renders
+  time: 20 minutes
+  tools: A browser, Search Console
+  steps:
+  - Open the page source (not the inspector) of a key template, such as a product or article page.
+  - Search the source for the page's main heading, a sentence from the main text, and the main navigation links.
+  - In Search Console, inspect the same URL, run **Test live URL**, then **View tested page**, and search the rendered HTML for the same items.
+  - Check that the navigation links are real `<a href>` links pointing to normal URLs.
+  done: You know whether the key content and links are in the initial HTML, only in the rendered version, or missing.
+  alt: Do the same on a modern web app or online store, using the **Rich Results Test** in step 3 to see the rendered HTML.
 ---
 
 ## How Google handles JavaScript

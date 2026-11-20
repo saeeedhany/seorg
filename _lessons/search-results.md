@@ -16,6 +16,16 @@ check:
     a: No. Google often generates the snippet from the page text when it better matches the specific query. A good meta description is a suggestion, not a guarantee.
   - q: Your informational guide gets more impressions but fewer clicks after an AI Overview starts appearing for its main query. What should you look at?
     a: Check whether your page is cited in the overview, compare click through rate by query in Search Console, and look at which queries still earn clicks. Then focus on questions where people need more than a summary, such as detailed comparisons, tools or first hand experience.
+practice:
+  title: Map three results pages
+  time: 20 minutes
+  tools: A browser in a private window
+  steps:
+  - 'Pick three searches: a question (such as "how to descale a kettle"), a product ("wireless headphones") and a local service ("dentist near me").'
+  - 'For each one, list the features you see: ads, AI Overview, featured snippet, People also ask, local pack, videos, images.'
+  - Count how many organic results are visible on a phone before you scroll. Use your browser's device mode or your own phone.
+  - Decide which of the three searches would be the best opportunity for a new website, and why.
+  done: You have notes for all three searches and a one sentence reason for your pick.
 ---
 
 ## Anatomy of an organic result

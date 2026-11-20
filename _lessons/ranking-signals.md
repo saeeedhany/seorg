@@ -20,6 +20,16 @@ check:
     a: Not directly. It is a framework from the Search Quality Rater Guidelines that describes what quality looks like. Google uses many signals that tend to line up with it, but there is no E-E-A-T score to raise.
   - q: Does Google use data from Google Analytics to rank pages?
     a: No. Google has said repeatedly that Analytics data is not used for ranking. Separately, Google has confirmed in court testimony that some systems use aggregated search interaction data, such as clicks on results.
+practice:
+  title: Fact check three pieces of SEO advice
+  time: 20 minutes
+  tools: A browser, Google Search Central documentation
+  steps:
+  - Collect three pieces of SEO advice from blogs, videos or social media. For example "posts need 2,000 words" or "use your keyword 3 times".
+  - For each one, search Google's documentation at developers.google.com/search for what Google says about it.
+  - Label each piece of advice as confirmed, myth, or not addressed by Google.
+  - For anything not addressed, write down what evidence would change your mind.
+  done: Every piece of advice has a label and a link to the source you based it on.
 ---
 
 ## What Google says it looks at

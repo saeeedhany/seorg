@@ -20,6 +20,17 @@ check:
     a: No. A sitemap is a list of suggestions. Check the Page indexing report for the reasons. They are often duplicates, redirects, noindexed pages or pages Google judged low value, and some of those should not be in the sitemap at all.
   - q: A 300 page company site wants to "optimize crawl budget". Is this a good use of time?
     a: Almost never. Google's crawl budget guide is aimed at sites with around a million or more pages, or tens of thousands of pages that change daily. A small site is better served by fixing content and internal links.
+practice:
+  title: Read a real robots.txt and sitemap
+  time: 15 minutes
+  tools: A browser, Search Console
+  steps:
+  - Open `yourdomain.com/robots.txt`. Write down every `Disallow` rule and which part of the site it blocks.
+  - Check that no rule blocks CSS, JavaScript, or a section you want to appear in search results.
+  - Find the sitemap (listed in robots.txt, or at `/sitemap.xml`). Open five URLs from it and check that each loads normally without a redirect.
+  - In Search Console, open **Sitemaps** and compare the number of discovered pages with the number you expected.
+  done: You can say which paths are blocked and why, and every sitemap URL you opened loaded normally.
+  alt: Do steps 1 to 3 on a large public site, such as a news site or an online store, and note which sections they block and why.
 ---
 
 ## How crawlers find URLs

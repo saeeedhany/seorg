@@ -18,6 +18,17 @@ check:
     a: No. Business names must match the real name used on signage and branding. Adding keywords or locations breaks Google's guidelines and can lead to suspension.
   - q: Why does a café rank first in the map results for "coffee" for one person and fifth for another person on the same street a kilometer away?
     a: Distance. Google weighs how close each business is to the searcher, or to the location named in the search. Proximity changes results even over short distances.
+practice:
+  title: Audit a Business Profile against its competitors
+  time: 25 minutes
+  tools: Google Search, Google Maps
+  steps:
+  - Search the business name and open its Business Profile. Check the name, primary category, hours, phone, website link, description and photos.
+  - Search its main service plus the city, such as "bakery Alexandria", and note the businesses in the local pack.
+  - Compare the categories shown under each competitor's name with this business's primary category.
+  - 'List every fix: wrong hours, a missing category, old photos, or keywords added to the name.'
+  done: You have a list of fixes for the profile, ordered by importance.
+  alt: Do this for a café, shop or clinic you visit often.
 ---
 
 ## Local search results

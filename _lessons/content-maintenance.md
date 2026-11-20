@@ -16,6 +16,17 @@ check:
     a: Merge them into one better article at the stronger URL, keeping the best parts of both. Then 301 redirect the other URL to it and update internal links.
   - q: An old article about a product you discontinued gets no traffic and no links. What are your options?
     a: If there is a relevant replacement, redirect the URL to it. If not, return 404 or 410. Keep it only if it still helps someone, for example existing owners of the product.
+practice:
+  title: Make the keep, update, merge or remove decision for 20 pages
+  time: 45 minutes
+  tools: Search Console, a spreadsheet
+  steps:
+  - In Search Console, open **Performance**, set **Compare** to the last 6 months against the previous 6 months, and export the **Pages** tab.
+  - Sort by clicks lost. Take the top 20 pages into your sheet.
+  - Mark each page keep, update, merge or remove, with a one line reason.
+  - Pick one page marked update and make a real update to it today.
+  done: Twenty pages have a decision, and one has been meaningfully updated with its visible date changed.
+  alt: Pick a blog with dated posts. Find three articles that are clearly out of date and write down what you would change in each.
 ---
 
 ## Why content decays

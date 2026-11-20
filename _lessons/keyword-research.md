@@ -18,6 +18,17 @@ check:
     a: No. They share the same intent, so one page should target both. Search the two queries and you will usually see the same pages ranking for each, which confirms it.
   - q: A keyword has 40,000 monthly searches and every top result is from a national news site or a large brand. Your site is six months old. What do you do?
     a: Aim for more specific variations first, where the top results are from sites similar to yours. Build authority on the topic with those, then return to the broad term later.
+practice:
+  title: Build a small keyword map for one topic
+  time: 30 minutes
+  tools: Search Console, Google autocomplete, Google Trends, a spreadsheet
+  steps:
+  - Pick one topic your site covers. Collect 15 related searches from Search Console (**Performance**, then **Queries**), autocomplete and People also ask.
+  - Search the ones that look similar and compare their top results. Group the searches that show mostly the same pages.
+  - Check the larger groups in **Google Trends** for seasonality.
+  - Assign each group to one existing URL, or mark it as a new page to create.
+  done: You have a sheet with three to five groups, each mapped to exactly one URL.
+  alt: Choose a topic you know well, such as a hobby, and use autocomplete, People also ask and Google Trends only.
 ---
 
 ## What a keyword is

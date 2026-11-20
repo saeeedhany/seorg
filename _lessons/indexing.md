@@ -18,6 +18,17 @@ check:
     a: Whether your other signals disagree with your canonical tag. Look at internal links, redirects, the sitemap, hreflang, and whether the two pages really are duplicates. Google picks the URL that most signals point to.
   - q: Is "Discovered, currently not indexed" an error?
     a: Not necessarily. It means Google knows the URL but has not crawled it yet. On small sites this usually resolves itself. If it persists on important pages, improve their internal links and check overall site quality and server speed.
+practice:
+  title: Sort your excluded pages into intended and broken
+  time: 25 minutes
+  tools: Search Console, browser developer tools
+  steps:
+  - In Search Console, open **Indexing**, then **Pages**, and list every reason shown under "Why pages aren't indexed".
+  - For each reason, open two example URLs and decide whether the exclusion is intended or a problem.
+  - Open a URL that should not exist, such as `yourdomain.com/this-page-does-not-exist`. In developer tools, open the **Network** tab, reload, and check that the page returns 404, not 200.
+  - Inspect one important page and confirm that Google selected the canonical you intended.
+  done: Every reason in the report is labeled intended or problem, and each problem has a planned fix.
+  alt: Do step 3 on three public sites. Some will return a real 404 and some a soft 404. Note which is which.
 ---
 
 ## Status codes

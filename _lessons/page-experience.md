@@ -18,6 +18,17 @@ check:
     a: Reserve space for the ad slot in CSS with a fixed height or aspect ratio, so the content does not move when the ad arrives.
   - q: Your mobile pages hide the product specifications that desktop pages show. Why is this a problem?
     a: Google uses the mobile version for indexing and ranking. Content missing from mobile is effectively missing from Google.
+practice:
+  title: Find the worst Core Web Vital on three templates
+  time: 25 minutes
+  tools: PageSpeed Insights, Search Console
+  steps:
+  - 'Run **PageSpeed Insights** on three page types: the home page, an article or category page, and a product or service page.'
+  - For each, record the mobile field data for LCP, INP and CLS and whether the page passes. Note when there is not enough field data.
+  - In the diagnostics, find the element that is the largest contentful paint and the main suggestion for each failing metric.
+  - In Search Console, open **Core Web Vitals** and check whether the same templates appear in failing URL groups.
+  done: For each template you have the worst metric and one concrete fix, such as compressing the hero image or reserving space for an ad slot.
+  alt: Run steps 1 to 3 on any public site. PageSpeed Insights works on every public URL.
 ---
 
 ## What page experience means

@@ -16,6 +16,17 @@ check:
     a: Google's policies prohibit offering incentives for reviews and asking only for positive ones. Reviews obtained this way can be removed and the profile can be penalized. Asking every diner for honest feedback is fine.
   - q: A cleaning company has 40 city pages where only the city name differs. What risk does this create, and what is better?
     a: These are doorway pages, which break Google's spam policies and give visitors nothing useful. Fewer pages with genuinely local content, such as real local jobs, team members, reviews from that area and area specific prices, are better.
+practice:
+  title: Check name, address and phone consistency
+  time: 30 minutes
+  tools: Google Search, Google Maps, Apple Maps, Bing
+  steps:
+  - Write down the business's official name, address and phone number exactly as they should appear.
+  - Search the business name together with the phone number, and the name together with the street name. Open every listing you find.
+  - Check five important listings, such as Google, Apple Maps, Bing Places, Facebook and the main directory in your industry. Note every mismatch.
+  - Draft a short review request message, and a reply to the most recent negative review, or a sample one.
+  done: You have a list of mismatches to correct, a review request ready to send, and one reply drafted.
+  alt: Do this for a local business you know well.
 ---
 
 ## Reviews

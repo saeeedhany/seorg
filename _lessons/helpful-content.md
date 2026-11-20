@@ -16,6 +16,17 @@ check:
     a: No. Google lists changing dates to make pages seem fresh, without substantial changes, as a sign of search engine first content. Update the date when you meaningfully update the page.
   - q: Your review of a camera summarizes specifications and other reviews. How can you make it more helpful?
     a: Use the camera yourself and show it. Include your own photos and test results, compare it with models you have used, explain who it suits and who should avoid it, and state how you tested.
+practice:
+  title: Assess one page as Google suggests
+  time: 25 minutes
+  tools: A browser
+  steps:
+  - Pick one important page and answer each of the seven self assessment questions from this lesson with yes or no, and a reason.
+  - 'Write down what only you can add to the page: data, photos, test results, examples or experience.'
+  - Check that it is clear who wrote the page, how it was made and why it exists.
+  - Search the main topic and compare your page with the top result. Be honest about which one is more useful.
+  done: You have three specific improvements for the page, ordered by how much they would help a reader.
+  alt: Assess the top ranking article for a topic you know well. Note where it shows real experience and where it is generic.
 ---
 
 ## People first content

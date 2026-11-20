@@ -16,6 +16,16 @@ check:
     a: Contact the writer or editor, thank them for the mention, and politely ask whether they would add a link to the relevant page, because it helps readers find the source. This is called unlinked mention reclamation.
   - q: Why is a "Top 100 statistics about remote work" page more likely to earn links than a product page?
     a: Writers need facts to cite, and a well sourced, regularly updated statistics page is easy to reference. Product pages rarely give a writer anything to cite.
+practice:
+  title: Plan one linkable asset and one email
+  time: 40 minutes
+  tools: A browser
+  steps:
+  - Search your topic with words such as "statistics", "calculator", "template" or "study". Note which pages others seem to cite.
+  - 'Find a gap: something people in your field need that is missing, outdated or poorly made.'
+  - Write one paragraph describing the asset you would create and who would reference it.
+  - List ten specific sites that would genuinely use it, with a reason for each. Draft one outreach email of under 100 words.
+  done: You have an asset plan, a list of ten targets with reasons, and a short email you would be comfortable receiving yourself.
 ---
 
 ## Start with something worth linking to

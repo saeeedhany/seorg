@@ -50,6 +50,23 @@ layout: default
       </div>
     </section>
     {% endif %}
+    {% if page.practice %}{% assign pr = page.practice %}
+    <section class="checklist practice" id="try-it" data-checklist="practice-{{ page.slug }}" aria-labelledby="practice-h">
+      <div class="checklist-head">
+        <h2 id="practice-h"><span class="practice-tag">Try it</span>{{ pr.title }}</h2>
+        <span class="checklist-count"><span data-check-count>{{ pr.steps.size }} steps</span><button class="reset" type="button" data-check-reset>Clear</button></span>
+      </div>
+      <p class="practice-meta"><span>{% include icon.html name="clock" px=15 %}{{ pr.time }}</span><span>{% include icon.html name="list" px=15 %}{{ pr.tools | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></p>
+      <div class="c-bar" aria-hidden="true"><span data-check-bar></span></div>
+      <ul>
+        {% for st in pr.steps %}
+        <li><label><input type="checkbox" value="{{ forloop.index }}"><span class="box" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="c-text"><span class="step-n">Step {{ forloop.index }}</span><span>{{ st | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></span></label></li>
+        {% endfor %}
+      </ul>
+      <p class="practice-done"><strong>Done when</strong>{{ pr.done | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {% if pr.alt %}<p class="practice-alt"><strong>No site of your own?</strong>{{ pr.alt | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+    </section>
+    {% endif %}
     <div class="complete">
       <button class="mark-complete" type="button" data-lesson="{{ page.slug }}" aria-pressed="false">
         <span class="circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>

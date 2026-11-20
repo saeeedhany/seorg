@@ -21,6 +21,17 @@ check:
     a: Usually not. It means Google fetched the page but decided not to store it, often because it judged the page low value or too similar to other pages. Improve the page or merge it with a stronger one. Indexing is never guaranteed.
   - q: Why might two people searching the same words see different results?
     a: Results are assembled at query time and depend on context such as location, language, device and search settings. A search for "plumber" in Cairo and in London returns different businesses.
+practice:
+  title: Trace two pages through crawling, indexing and serving
+  time: 15 minutes
+  tools: Search Console
+  steps:
+  - In Search Console, open **URL inspection** and inspect your home page. Note when it was last crawled and whether it is indexed.
+  - Inspect a page you published recently. Note how Google found it (sitemap or referring page) and whether it is indexed.
+  - For both pages, compare the **user declared canonical** with the **Google selected canonical**.
+  - Run **Test live URL**, then open **View tested page** and look at the screenshot. Check that the main content is visible.
+  done: For each page you can say which of the three stages it has reached, and why if it stopped early.
+  alt: Paste a page from any public site into Google's **Rich Results Test** and open **View tested page** to see the rendered HTML and screenshot Google produces. Then search for the exact URL to see whether it is indexed.
 ---
 
 ## The three stages

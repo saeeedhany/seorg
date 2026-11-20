@@ -18,6 +18,17 @@ check:
     a: rel="sponsored", because the link exists as part of a paid relationship. The sponsorship is perfectly fine, but the link should not pass ranking credit.
   - q: Which is likely more valuable to a gardening blog, a link from a national news site's article about urban gardening or ten links from unrelated directory sites?
     a: The news article link. It is editorial, relevant, and from a respected page that real people read. Directory links from unrelated sites carry little or no value.
+practice:
+  title: Judge five links pointing to your site
+  time: 20 minutes
+  tools: Search Console, a browser
+  steps:
+  - In Search Console, open **Links** and look at **Top linking sites** and **Top linked pages**.
+  - Open five linking sites and find the link to you on each page.
+  - Rate each link for relevance, editorial choice, placement and anchor text.
+  - If you pay for any links or sponsorships, check that those links use `rel="sponsored"` or `rel="nofollow"`.
+  done: You have a short rating for each of the five links, and no paid link is missing its attribute.
+  alt: Open a news article and inspect its outbound links with your browser's inspector. Note which ones carry `sponsored`, `ugc` or `nofollow`, and guess why.
 ---
 
 ## Why links matter

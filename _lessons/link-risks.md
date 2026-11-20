@@ -16,6 +16,17 @@ check:
     a: Usually not. Google's systems ignore most links like these. Disavowing is meant for links you or someone working for you built, or for responding to a manual action.
   - q: A large magazine hosts thousands of coupon pages written by a third party, with little oversight, to rank on its domain's reputation. Which policy is that?
     a: Site reputation abuse. Google's policy covers third party content published mainly to exploit a host site's ranking signals, regardless of any arrangement between them.
+practice:
+  title: Classify link offers and check for penalties
+  time: 15 minutes
+  tools: Search Console, Google's spam policies
+  steps:
+  - In Search Console, open **Security & Manual Actions**, then **Manual actions**. Note whether any action is listed.
+  - 'Classify these offers as allowed or link spam: "50 high authority backlinks for $99", "a sponsored article with a nofollow link", "a guest post for our readers, no link required", "swap links with 200 partner sites".'
+  - Look at your top linking sites for obvious patterns of paid or network links.
+  - Using the two conditions in this lesson, decide whether your site needs a disavow file. For most sites the answer is no.
+  done: You have a written yes or no on disavowing, with the reason, and all four offers classified.
+  alt: Do step 2 only, then read Google's spam policies page and find the rule that covers each offer.
 ---
 
 ## Link spam

@@ -16,6 +16,17 @@ check:
     a: Google rewrites title links that are stuffed with keywords, too long, or a poor description of the page. Write a clear, concise title that describes the page, and Google is more likely to use it.
   - q: What is good alt text for a photo of a person repotting a snake plant into a terracotta pot?
     a: Something like "Hands lifting a snake plant out of its plastic nursery pot into a larger terracotta pot". It describes what the image shows in the context of the page, without stuffing in keywords.
+practice:
+  title: Rewrite three titles and descriptions
+  time: 30 minutes
+  tools: Search Console, a browser
+  steps:
+  - In Search Console, open **Performance**, then **Pages**, and show CTR. Find three pages with many impressions and a low CTR for their position.
+  - Search each page's main query and look at how Google shows your title and snippet. Note any rewrite.
+  - Rewrite the title and meta description for each page using the guidance in this lesson.
+  - Check each page's headings and confirm that the H1 states the topic and the H2s outline the sections.
+  done: Three new titles and descriptions are published. Note the date, so you can compare CTR after four weeks.
+  alt: Rewrite the titles and descriptions of three pages on any small business site, then compare yours with the originals.
 ---
 
 ## The title element

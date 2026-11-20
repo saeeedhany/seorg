@@ -16,6 +16,17 @@ check:
     a: The noindex pages. They keep important pages out of results entirely. Missing alt text matters for accessibility and image search, but its impact on rankings is much smaller.
   - q: What makes a finding useful to the person who has to fix it?
     a: It states the problem, shows where it happens with examples, explains why it matters, and says exactly what to change. "Improve page speed" is not useful. "Product images average 1.8 MB; compress and serve WebP to bring LCP under 2.5 seconds" is.
+practice:
+  title: Run a mini audit and write five findings
+  time: 2 hours
+  tools: Screaming Frog (free up to 500 URLs), Search Console, PageSpeed Insights
+  steps:
+  - Crawl the site with Screaming Frog. Export status codes, titles, canonicals and noindex rules.
+  - Compare the crawl with the **Pages** report in Search Console and with the sitemap.
+  - Run PageSpeed Insights on the two most important templates.
+  - Write your five most important findings, each with problem, evidence, impact, fix and priority.
+  done: You have a one page report with five prioritized findings that a developer or writer could act on without asking you questions.
+  alt: Audit a small local business site. Keep the crawl gentle by lowering the crawl speed in Screaming Frog's settings.
 ---
 
 ## Before you start

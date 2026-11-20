@@ -16,6 +16,17 @@ check:
     a: Google limited FAQ rich results to well known government and health sites in 2023, then removed them from Search entirely in May 2026. The markup is still valid Schema.org, but it no longer produces any feature in Google Search.
   - q: A page has Review markup with a 4.9 rating, but no reviews are shown on the page. Is that allowed?
     a: No. Structured data must describe content that visitors can see. Marking up reviews that do not appear on the page breaks Google's guidelines and can lead to a manual action.
+practice:
+  title: Test your structured data
+  time: 15 minutes
+  tools: Rich Results Test, Search Console
+  steps:
+  - Run two of your main page types through the **Rich Results Test** and list the structured data types it detects.
+  - Note every error and warning, and which rich results each page is eligible for.
+  - Check that every value in the markup, such as prices, ratings and dates, matches what visitors see on the page.
+  - List any markup for retired types, such as FAQ or HowTo, so you can remove it or stop maintaining it.
+  done: You have a list of detected types, the errors to fix, and any markup to retire.
+  alt: Test a recipe page from a large recipe site and a product page from a large online store. Compare what each one marks up.
 ---
 
 ## What structured data is

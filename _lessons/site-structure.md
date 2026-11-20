@@ -16,6 +16,17 @@ check:
     a: Link to it from relevant, well visited pages such as the hub page for its topic, related articles, and possibly the navigation. Use anchor text that describes what the guide covers.
   - q: Which anchor text is better, "click here" or "how to repot a snake plant"?
     a: The descriptive one. It tells visitors and Google what the linked page is about. "Click here" says nothing about the destination.
+practice:
+  title: Find your hardest to reach important pages
+  time: 20 minutes
+  tools: A browser, Search Console
+  steps:
+  - List the five pages that matter most to your goals, such as key services, products or guides.
+  - For each one, count the clicks needed to reach it from the home page using only links on the pages.
+  - In Search Console, open **Links**, then **Internal links**, and note how many internal links each of the five has.
+  - For the weakest page, add two links from relevant, well visited pages, with anchor text that describes it.
+  done: You know the click depth and internal link count of your five key pages, and you added links to the weakest one.
+  alt: Pick an article from at least a year ago on a public blog. Count the clicks from its home page and note how good the anchor text on the way is.
 ---
 
 ## Why structure matters
