@@ -16,6 +16,7 @@ layout: default
       <p class="lede">{{ page.description }}</p>
       <div class="lesson-meta">
         <span class="read">{% include icon.html name="clock" px=15 %}{{ minutes }} minute read</span>
+        {% if page.last_modified_at %}<span>Reviewed <time datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">{{ page.last_modified_at | date: '%-d %B %Y' }}</time></span>{% endif %}
         <nav class="segments" aria-label="Lessons in this module">
           {% for id in mod.lessons %}{% assign l = site.lessons | where: "slug", id | first %}<a href="{{ l.url | relative_url }}" data-lesson="{{ id }}" title="{{ l.title }}"{% if id == page.slug %} aria-current="page"{% endif %}><span class="sr">{{ l.title }}</span></a>{% endfor %}
         </nav>

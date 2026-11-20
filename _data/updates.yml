@@ -1,5 +1,47 @@
+- year: 2026
+  items:
+    - name: November 2026 core update
+      date: Started 10 November 2026
+      text: A broad core update, still rolling out when this page was last reviewed. Wait for the rollout to finish before judging its effect on your site.
+      lesson: traffic-drops
+    - name: Spam updates in June, August and September 2026
+      date: June to October 2026
+      text: Three spam updates improved Google's automated spam detection. The September update was the longest, at about two weeks.
+      lesson: link-risks
+    - name: Generative AI report in Search Console
+      date: June to August 2026
+      text: A new Search Console report shows how often your pages appear in AI Overviews and AI Mode. It reports impressions only, and it reached all websites by the end of August 2026.
+      lesson: measuring
+    - name: May 2026 core update
+      date: May to June 2026
+      text: A broad core update that took about twelve days to roll out.
+      lesson: traffic-drops
+    - name: FAQ rich results removed
+      date: May 2026
+      text: FAQ rich results stopped appearing in Google Search on 7 May 2026, after being limited to government and health sites since 2023.
+      lesson: structured-data
+    - name: March 2026 core update and spam update
+      date: March to April 2026
+      text: A short spam update was followed days later by a broad core update that took about twelve days to roll out.
+      lesson: traffic-drops
+    - name: February 2026 Discover update
+      date: February 2026
+      text: An update to how content is shown in Google Discover, the feed on the Google app. It did not target web search results.
+      lesson: search-results
+    - name: Practice Problem results removed
+      date: January 2026
+      text: Google stopped showing Practice Problem rich results, continuing its move to fewer rich result types.
+      lesson: structured-data
 - year: 2025
   items:
+    - name: December 2025 core update
+      date: December 2025
+      text: A broad core update that took about eighteen days to roll out.
+      lesson: traffic-drops
+    - name: AI Mode expands worldwide
+      date: August to October 2025
+      text: AI Mode expanded from a few markets to more than 200 countries and territories, and to many more languages.
+      lesson: search-results
     - name: August 2025 spam update
       date: August to September 2025
       text: A spam update that applied globally and to all languages.
@@ -8,6 +50,10 @@
       date: June to July 2025
       text: A broad core update. As with every core update, it had no single target and no specific fix.
       lesson: traffic-drops
+    - name: Seven structured data types phased out
+      date: June 2025
+      text: Google announced it would stop showing rich results for Book Actions, Course Info, Claim Review, Estimated Salary, Learning Video, Special Announcement and Vehicle Listing. Rankings were not affected.
+      lesson: structured-data
     - name: AI Mode launches in the US
       date: May 2025
       text: A conversational search mode built on generated answers with links to sources. Google said no special optimization is required beyond normal SEO practices.

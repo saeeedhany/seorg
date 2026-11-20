@@ -6,9 +6,8 @@
   <meta name="view-transition" content="same-origin">
   <script>(function(){var d=document.documentElement;try{var t=localStorage.getItem("seo-rg-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}try{if(!sessionStorage.getItem("seo-rg-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("intro")}catch(e){}}())</script>
   {% seo %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+  <link rel="preload" href="{{ '/assets/fonts/hanken-grotesk.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/literata.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -44,7 +43,7 @@
     <main id="main" class="main">
       {{ content }}
       <footer class="site-footer">
-        <p>{{ site.title }}. Written and maintained by {{ site.author }}.</p>
+        <p>{{ site.title }}. Written and maintained by <a href="{{ site.author_url }}" rel="author">{{ site.author }}</a>.</p>
         <p><a href="https://developers.google.com/search/docs">Google Search Central documentation</a></p>
       </footer>
     </main>

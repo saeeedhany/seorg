@@ -45,7 +45,8 @@ You can group the data by **query, page, country, device, search appearance and 
 3. **Sitemaps** shows submitted sitemaps and how many URLs were found.
 4. **Core Web Vitals** shows field data for groups of similar pages.
 5. **Links** shows top linked pages, top linking sites and internal links.
-6. **Manual actions and Security issues** shows problems Google found. Check them whenever traffic drops.
+6. **Generative AI** shows how often your pages appeared in AI Overviews and AI Mode. It reports impressions only. Clicks from these features are already counted in the Performance report.
+7. **Manual actions and Security issues** shows problems Google found. Check them whenever traffic drops.
 
 ## Google Analytics 4
 

@@ -8,10 +8,10 @@
   def: Status codes meaning a page does not exist (404) or has been removed on purpose (410). Both are the right response for pages that are gone.
   lesson: indexing
 - term: AI Mode
-  def: A conversational search experience from Google, launched in the US in May 2025, that answers questions with generated responses and links to sources.
+  def: A conversational search experience from Google that answers questions with generated responses and links to sources. It launched in the US in May 2025 and reached more than 200 countries and territories by late 2025.
   lesson: search-results
 - term: AI Overviews
-  def: Generated summaries at the top of some Google results pages, with links to the pages they draw on. No special markup is needed to appear in them.
+  def: Generated summaries at the top of some Google results pages, with links to the pages they draw on. No special markup is needed to appear in them, and Search Console counts their traffic in the Performance report.
   lesson: search-results
 - term: Alt text
   def: The alt attribute of an image, describing it for people who cannot see it. Google also uses it to understand images.

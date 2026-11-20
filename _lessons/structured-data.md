@@ -10,10 +10,10 @@ takeaways:
   - Structured data makes a page eligible for rich results. It does not guarantee them and is not a direct ranking boost.
   - Use JSON-LD, the format Google recommends, and use the Schema.org vocabulary.
   - Markup must describe content that is visible on the page. Misleading markup can lead to a manual action.
-  - Google has retired several rich result types, including HowTo, and limited FAQ results to a small set of sites. Check the Search Gallery before adding a type.
+  - Google has retired several rich result types, including HowTo and FAQ. Check the Search Gallery before adding a type.
 check:
   - q: You added FAQ markup to every product page, but no FAQ results appear. Why?
-    a: Since 2023, Google shows FAQ rich results only for well known, authoritative government and health sites. For other sites the markup is valid but will not produce the feature.
+    a: Google limited FAQ rich results to well known government and health sites in 2023, then removed them from Search entirely in May 2026. The markup is still valid Schema.org, but it no longer produces any feature in Google Search.
   - q: A page has Review markup with a 4.9 rating, but no reviews are shown on the page. Is that allowed?
     a: No. Structured data must describe content that visitors can see. Marking up reviews that do not appear on the page breaks Google's guidelines and can lead to a manual action.
 ---
@@ -72,8 +72,10 @@ Google's **Search Gallery** at developers.google.com lists every supported type 
 ### Retired and limited types
 
 1. **HowTo** rich results were removed in 2023.
-2. **FAQ** rich results have been shown only for well known government and health sites since 2023.
-3. In 2025 Google phased out several more types that were rarely used, such as Course Info, Claim Review and Vehicle Listing.
+2. **FAQ** rich results were limited to well known government and health sites in 2023, and removed from Google Search entirely on 7 May 2026.
+3. In June 2025 Google phased out seven less used types: Book Actions, Course Info, Claim Review, Estimated Salary, Learning Video, Special Announcement and Vehicle Listing.
+4. **Practice Problem** results were removed in January 2026.
+5. **Dataset** markup is now used only by Google Dataset Search, not by Google Search results.
 
 Old SEO guides that recommend FAQ and HowTo markup "for more space in results" are out of date.
 
