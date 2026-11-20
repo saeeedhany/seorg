@@ -1,0 +1,219 @@
+- term: 301 redirect
+  def: A permanent redirect. It tells browsers and search engines that a page has moved for good, and Google moves its signals to the new URL. 308 is the equivalent that keeps the request method.
+  lesson: indexing
+- term: 302 redirect
+  def: A temporary redirect. Google keeps the original URL in mind for longer. 307 is the equivalent that keeps the request method.
+  lesson: indexing
+- term: 404 and 410
+  def: Status codes meaning a page does not exist (404) or has been removed on purpose (410). Both are the right response for pages that are gone.
+  lesson: indexing
+- term: AI Mode
+  def: A conversational search experience from Google, launched in the US in May 2025, that answers questions with generated responses and links to sources.
+  lesson: search-results
+- term: AI Overviews
+  def: Generated summaries at the top of some Google results pages, with links to the pages they draw on. No special markup is needed to appear in them.
+  lesson: search-results
+- term: Alt text
+  def: The alt attribute of an image, describing it for people who cannot see it. Google also uses it to understand images.
+  lesson: on-page
+- term: Anchor text
+  def: The clickable words of a link. It helps readers and Google understand the page being linked to.
+  lesson: site-structure
+- term: Average position
+  def: In Search Console, the position of your topmost result for each impression, averaged across all impressions.
+  lesson: measuring
+- term: Backlink
+  def: A link from another website to yours.
+  lesson: how-links-work
+- term: Breadcrumb
+  def: A trail of links showing where a page sits in a site's hierarchy, such as Home, Plants, Snake plant care.
+  lesson: site-structure
+- term: Canonical URL
+  def: The URL Google chooses to represent a group of duplicate or very similar pages. You can suggest one with rel=canonical, redirects, sitemaps and internal links.
+  lesson: indexing
+- term: Citation
+  def: An online mention of a business's name, address and phone number, for example in a directory or map app.
+  lesson: reviews-and-citations
+- term: Cloaking
+  def: Showing search engines different content from what users see. It breaks Google's spam policies.
+  lesson: link-risks
+- term: Core update
+  def: A broad change to Google's core ranking systems, released several times a year. It is not a penalty and has no single fix.
+  lesson: traffic-drops
+- term: Core Web Vitals
+  def: Three metrics of page experience measured on real users. LCP measures loading, INP measures responsiveness, and CLS measures visual stability.
+  lesson: page-experience
+- term: Crawl budget
+  def: How many URLs Google can and wants to crawl on a site in a given time. It matters mainly for very large or fast changing sites.
+  lesson: crawling
+- term: Crawling
+  def: Fetching pages from the web. Google's crawler is called Googlebot.
+  lesson: how-search-works
+- term: CLS (Cumulative Layout Shift)
+  def: A Core Web Vital that measures how much content moves unexpectedly. Good is 0.1 or less.
+  lesson: page-experience
+- term: CTR (click through rate)
+  def: Clicks divided by impressions. It is the share of people who saw a result and clicked it.
+  lesson: measuring
+- term: Disavow
+  def: A Search Console tool for asking Google to ignore specific links to your site. Most sites never need it.
+  lesson: link-risks
+- term: Domain Authority and Domain Rating
+  def: Scores invented by SEO tool companies (Moz and Ahrefs) to estimate a site's link strength. Google does not use them.
+  lesson: how-links-work
+- term: Doorway pages
+  def: Many near identical pages built to rank for variations such as city names, all funneling visitors to the same place. They break Google's spam policies.
+  lesson: reviews-and-citations
+- term: E-E-A-T
+  def: Experience, Expertise, Authoritativeness and Trust. It is a framework from Google's rater guidelines that describes quality, not a score or a single ranking factor.
+  lesson: ranking-signals
+- term: Featured snippet
+  def: A short answer taken from one page and shown prominently in results, with a link to the source.
+  lesson: search-results
+- term: Field data
+  def: Performance data collected from real visitors, such as the Chrome UX Report. Google's systems use field data.
+  lesson: page-experience
+- term: Google Business Profile
+  def: A free business listing that powers local results on Google Search and Maps.
+  lesson: local-ranking
+- term: Googlebot
+  def: Google's web crawler.
+  lesson: how-search-works
+- term: hreflang
+  def: An annotation that tells Google which language or regional version of a page to show to which searchers.
+  lesson: international-seo
+- term: Impressions
+  def: In Search Console, the number of times a link to your site appeared in results that a searcher could see.
+  lesson: measuring
+- term: Index
+  def: Google's database of the pages it has processed and chosen to store. Only indexed pages can appear in results.
+  lesson: how-search-works
+- term: INP (Interaction to Next Paint)
+  def: A Core Web Vital that measures how quickly a page responds to taps, clicks and key presses. Good is 200 milliseconds or less. It replaced FID in March 2024.
+  lesson: page-experience
+- term: Internal link
+  def: A link from one page on your site to another page on the same site.
+  lesson: site-structure
+- term: JSON-LD
+  def: The format Google recommends for structured data. It is a script block that describes the page in a standard vocabulary.
+  lesson: structured-data
+- term: Key event
+  def: An action you mark as important in Google Analytics 4, such as a purchase or sign up. It was previously called a conversion.
+  lesson: measuring
+- term: Keyword
+  def: A search query, the words people type or say into a search engine.
+  lesson: keyword-research
+- term: Keyword cannibalization
+  def: Several pages on one site targeting the same search intent, so none of them is clearly the best result.
+  lesson: keyword-research
+- term: Keyword stuffing
+  def: Filling a page with keywords in an unnatural way to manipulate rankings. It breaks Google's spam policies.
+  lesson: ranking-signals
+- term: Lab data
+  def: Performance data from a simulated test such as Lighthouse. It is useful for diagnosing problems, but it is not what Google's ranking systems use.
+  lesson: page-experience
+- term: LCP (Largest Contentful Paint)
+  def: A Core Web Vital that measures how long the largest visible element takes to appear. Good is 2.5 seconds or less.
+  lesson: page-experience
+- term: Link scheme
+  def: Any attempt to manipulate rankings with links, such as buying links that pass credit or large scale link exchanges.
+  lesson: link-risks
+- term: Local pack
+  def: The map and short list of businesses shown for searches with local intent.
+  lesson: local-ranking
+- term: Long tail
+  def: Specific, longer search queries. Each one has low volume, but together they make up most searches.
+  lesson: keyword-research
+- term: Manual action
+  def: A penalty applied by a reviewer at Google when a site breaks the spam policies. It appears in Search Console.
+  lesson: link-risks
+- term: Meta description
+  def: An HTML tag that summarizes a page. Google may use it as the snippet. It is not a ranking factor.
+  lesson: on-page
+- term: Mobile first indexing
+  def: Google's practice of using the mobile version of a page for indexing and ranking.
+  lesson: page-experience
+- term: NAP
+  def: Name, address and phone number. These are the core details of a local business, and they should be consistent everywhere.
+  lesson: reviews-and-citations
+- term: nofollow, sponsored and ugc
+  def: Link attributes that tell Google a link is not a vouch, is paid, or comes from user generated content. Google treats them as hints.
+  lesson: how-links-work
+- term: noindex
+  def: A rule in a robots meta tag or HTTP header that tells Google not to show a page in results. Google must be able to crawl the page to see it.
+  lesson: indexing
+- term: Organic results
+  def: The unpaid search results that Google ranks on its own judgment.
+  lesson: what-is-seo
+- term: Orphan page
+  def: A page with no internal links pointing to it. It is hard for search engines and visitors to find.
+  lesson: crawling
+- term: PageRank
+  def: Google's original algorithm for measuring a page's importance from the links pointing to it. It is still part of Google's link analysis systems.
+  lesson: how-links-work
+- term: Page indexing report
+  def: The Search Console report that shows which pages are indexed and why others are not.
+  lesson: indexing
+- term: People also ask
+  def: A results page feature that lists related questions with short answers taken from web pages.
+  lesson: search-results
+- term: Referring domain
+  def: A unique website that links to yours. It is a better measure than the total number of links.
+  lesson: earning-links
+- term: Rendering
+  def: Running a page's code, including JavaScript, to produce the final content. Google renders pages in a recent version of Chrome.
+  lesson: javascript-seo
+- term: Rich result
+  def: A search result with extra features such as review stars, prices or event dates, usually made possible by structured data.
+  lesson: structured-data
+- term: robots.txt
+  def: A file at the root of a site that tells crawlers which paths they may fetch. It controls crawling, not indexing.
+  lesson: crawling
+- term: Scaled content abuse
+  def: Producing many pages mainly to manipulate rankings, with little value for readers, by any method. It breaks Google's spam policies.
+  lesson: helpful-content
+- term: Search Console
+  def: Google's free tool for site owners. It shows search performance, indexing, and problems Google found.
+  lesson: measuring
+- term: Search intent
+  def: What a searcher actually wants. The common kinds are informational, navigational, commercial and transactional.
+  lesson: search-intent
+- term: SERP
+  def: Search engine results page, the page of results shown for a query.
+  lesson: search-results
+- term: Site reputation abuse
+  def: Publishing third party content on a respected site mainly to exploit its ranking signals. It breaks Google's spam policies.
+  lesson: link-risks
+- term: Sitemap
+  def: A file, usually XML, that lists the URLs you want search engines to know about.
+  lesson: crawling
+- term: Snippet
+  def: The text under a title link in search results. Google builds it from the meta description or from page text.
+  lesson: search-results
+- term: Soft 404
+  def: A page that tells visitors it is missing or empty but returns status 200. It should return a real 404 instead.
+  lesson: indexing
+- term: SpamBrain
+  def: Google's system for detecting spam, including link spam.
+  lesson: link-risks
+- term: Structured data
+  def: Code that describes the content of a page in a standard vocabulary (Schema.org), so search engines can understand it precisely.
+  lesson: structured-data
+- term: Title link
+  def: The clickable headline of a search result. It is usually taken from the page's title element.
+  lesson: on-page
+- term: Topic cluster
+  def: A group of pages on related subtopics, linked to each other and to a hub page that introduces the topic.
+  lesson: site-structure
+- term: URL Inspection
+  def: A Search Console tool that shows how Google sees a single URL, with a live test of the rendered page.
+  lesson: how-search-works
+- term: x-default
+  def: An hreflang value that marks the page to show when no other language or region version matches the searcher.
+  lesson: international-seo
+- term: YMYL
+  def: Your Money or Your Life. These are topics such as health, finance and safety, where poor information can cause real harm, so Google holds them to higher standards.
+  lesson: ranking-signals
+- term: Zero click search
+  def: A search that ends without a click to any website, often because the answer is shown on the results page.
+  lesson: search-results

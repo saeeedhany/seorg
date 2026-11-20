@@ -1,0 +1,47 @@
+- title: How search works
+  summary: What SEO is, how Google finds and ranks pages, what a results page contains, and which ranking ideas are real.
+  lessons:
+    - what-is-seo
+    - how-search-works
+    - search-results
+    - ranking-signals
+
+- title: Technical foundations
+  summary: Make sure Google can crawl, render and index the right pages, and that those pages load well on a phone.
+  lessons:
+    - crawling
+    - indexing
+    - site-structure
+    - javascript-seo
+    - page-experience
+    - structured-data
+    - international-seo
+
+- title: Keywords and content
+  summary: Find what people search for, understand what they want, and write pages that serve them better than the alternatives.
+  lessons:
+    - keyword-research
+    - search-intent
+    - helpful-content
+    - on-page
+    - content-maintenance
+
+- title: Links and authority
+  summary: Understand why links still matter, how to earn them honestly, and how to stay clear of link spam.
+  lessons:
+    - how-links-work
+    - earning-links
+    - link-risks
+
+- title: Local SEO
+  summary: Rank in map results for searches with local intent, through your Business Profile, reviews and local pages.
+  lessons:
+    - local-ranking
+    - reviews-and-citations
+
+- title: Measure and improve
+  summary: Read the data, explain a traffic drop, and run a full audit that puts the whole course into practice.
+  lessons:
+    - measuring
+    - traffic-drops
+    - seo-audit

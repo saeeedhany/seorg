@@ -1,0 +1,108 @@
+- year: 2025
+  items:
+    - name: August 2025 spam update
+      date: August to September 2025
+      text: A spam update that applied globally and to all languages.
+      lesson: link-risks
+    - name: June 2025 core update
+      date: June to July 2025
+      text: A broad core update. As with every core update, it had no single target and no specific fix.
+      lesson: traffic-drops
+    - name: AI Mode launches in the US
+      date: May 2025
+      text: A conversational search mode built on generated answers with links to sources. Google said no special optimization is required beyond normal SEO practices.
+      lesson: search-results
+    - name: March 2025 core update
+      date: March 2025
+      text: A broad core update.
+      lesson: traffic-drops
+- year: 2024
+  items:
+    - name: Site reputation abuse policy clarified
+      date: November 2024
+      text: Google clarified that third party content published mainly to exploit a host site's ranking signals breaks the policy, whatever level of involvement or oversight the host has.
+      lesson: link-risks
+    - name: AI Overviews launch in the US
+      date: May 2024
+      text: Generated summaries began appearing above organic results for some queries, linking to the pages they draw on. They have since expanded to many countries.
+      lesson: search-results
+    - name: March 2024 core update and new spam policies
+      date: March 2024
+      text: The helpful content system became part of Google's core ranking systems. New spam policies targeted scaled content abuse, site reputation abuse and expired domain abuse.
+      lesson: helpful-content
+    - name: INP replaces FID as a Core Web Vital
+      date: March 2024
+      text: Interaction to Next Paint, which measures responsiveness across a whole visit, replaced First Input Delay.
+      lesson: page-experience
+- year: 2023
+  items:
+    - name: FAQ and HowTo rich results reduced
+      date: August 2023
+      text: FAQ rich results were limited to well known government and health sites, and HowTo rich results were later removed entirely.
+      lesson: structured-data
+- year: 2022
+  items:
+    - name: E-A-T becomes E-E-A-T
+      date: December 2022
+      text: Google's Search Quality Rater Guidelines added Experience, giving first hand experience its own place in how quality is described.
+      lesson: ranking-signals
+    - name: Helpful content update
+      date: August 2022
+      text: A new sitewide system that demoted content created mainly for search engines rather than people. It became part of the core systems in 2024.
+      lesson: helpful-content
+- year: 2021
+  items:
+    - name: Page experience update
+      date: June to August 2021
+      text: Core Web Vitals became part of Google's ranking systems, alongside mobile friendliness and HTTPS. Google described it as one signal among many, with relevance still first.
+      lesson: page-experience
+- year: 2019
+  items:
+    - name: BERT
+      date: October 2019
+      text: A language model that helped Google understand the meaning of words in context, especially in longer, conversational queries.
+      lesson: ranking-signals
+    - name: nofollow becomes a hint, sponsored and ugc introduced
+      date: September 2019
+      text: Google began treating nofollow as a hint and introduced the sponsored and ugc attributes for paid and user generated links.
+      lesson: how-links-work
+- year: 2016
+  items:
+    - name: Penguin becomes real time
+      date: September 2016
+      text: Penguin became part of the core algorithm and began devaluing spammy links as pages are recrawled, instead of demoting whole sites in periodic updates.
+      lesson: link-risks
+- year: 2015
+  items:
+    - name: RankBrain
+      date: 2015
+      text: Google's first deep learning system in search, used to relate words to concepts and handle queries it had not seen before.
+      lesson: ranking-signals
+    - name: Mobile friendly update
+      date: April 2015
+      text: Mobile friendliness became a ranking signal for mobile searches. Mobile first indexing, which uses the mobile version of pages for indexing, followed in later years.
+      lesson: page-experience
+- year: 2014
+  items:
+    - name: HTTPS as a ranking signal
+      date: August 2014
+      text: Google confirmed HTTPS as a light ranking signal.
+      lesson: page-experience
+- year: 2013
+  items:
+    - name: Hummingbird
+      date: 2013
+      text: A rewrite of Google's core search algorithm that focused on understanding the meaning of whole queries rather than matching individual words.
+      lesson: ranking-signals
+- year: 2012
+  items:
+    - name: Penguin
+      date: April 2012
+      text: Targeted sites that used manipulative links, such as paid links and link networks, to rank.
+      lesson: link-risks
+- year: 2011
+  items:
+    - name: Panda
+      date: February 2011
+      text: Targeted thin, low quality and duplicated content, and introduced the idea that weak content can affect how a whole site is seen. It became part of the core ranking systems in 2015.
+      lesson: helpful-content

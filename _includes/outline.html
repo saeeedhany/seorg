@@ -1,0 +1,35 @@
+{% assign total = 0 %}{% for m in site.data.course %}{% assign total = total | plus: m.lessons.size %}{% endfor %}
+<div class="ol-progress">
+  <svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><circle class="ring-track" cx="18" cy="18" r="15.9"/><circle class="ring-fill" cx="18" cy="18" r="15.9" pathLength="100" data-progress-ring/></svg>
+  <div>
+    <p class="ol-progress-title" data-progress-title>Your progress</p>
+    <p class="ol-progress-sub" data-progress-text>{{ total }} lessons in {{ site.data.course.size }} modules</p>
+  </div>
+</div>
+{% for m in site.data.course %}{% assign open = false %}{% if page.slug and m.lessons contains page.slug %}{% assign open = true %}{% endif %}
+<section class="ol-module{% if open %} is-open is-current{% endif %}" data-ol-module>
+  <button class="ol-head" type="button" aria-expanded="{{ open }}" aria-controls="olm-{{ forloop.index }}">
+    <span class="ol-num">{{ forloop.index }}</span>
+    <span class="ol-title">{{ m.title }}</span>
+    <span class="ol-count" data-ol-count data-total="{{ m.lessons.size }}">{{ m.lessons.size }}</span>
+    {% include icon.html name="chevron" px=14 %}
+  </button>
+  <div class="ol-body" id="olm-{{ forloop.index }}">
+    <div class="ol-inner">
+      <ol class="ol-lessons">
+        {% for id in m.lessons %}{% assign l = site.lessons | where: "slug", id | first %}
+        <li data-lesson="{{ id }}"><a class="ol-link" href="{{ l.url | relative_url }}"{% if page.url == l.url %} aria-current="page"{% endif %}><span class="ol-dot"></span><span>{{ l.short | default: l.title }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+{% endfor %}
+<section class="ol-ref" aria-label="Reference">
+  <p>Reference</p>
+  <ol>
+    <li><a href="{{ '/glossary/' | relative_url }}"{% if page.url == '/glossary/' %} aria-current="page"{% endif %}>{% include icon.html name="book" %}Glossary</a></li>
+    <li><a href="{{ '/checklists/' | relative_url }}"{% if page.url == '/checklists/' %} aria-current="page"{% endif %}>{% include icon.html name="list" %}Checklists</a></li>
+    <li><a href="{{ '/algorithm-updates/' | relative_url }}"{% if page.url == '/algorithm-updates/' %} aria-current="page"{% endif %}>{% include icon.html name="history" %}Google update history</a></li>
+  </ol>
+</section>

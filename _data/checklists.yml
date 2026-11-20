@@ -1,0 +1,202 @@
+- id: pre-publish
+  title: Before you publish a page
+  intro: Run through this for every new or substantially updated page.
+  groups:
+    - name: Purpose and intent
+      items:
+        - text: You can say in one sentence what the page does for the searcher
+          lesson: search-intent
+        - text: The format matches what ranks for the main query (guide, list, product page, tool)
+          lesson: search-intent
+        - text: No other page on the site already serves the same intent
+          lesson: keyword-research
+    - name: Content
+      items:
+        - text: The main question is answered early, then explained in depth
+          lesson: on-page
+        - text: The page adds something the current results lack, such as data, experience, examples or clarity
+          lesson: helpful-content
+        - text: Facts are checked and sources are linked
+          lesson: helpful-content
+        - text: The author is named where readers would expect it, with a link to their background
+          lesson: helpful-content
+    - name: On page elements
+      items:
+        - text: The title is unique, specific and readable, with the main topic early
+          lesson: on-page
+        - text: The meta description summarizes what the page offers
+          lesson: on-page
+        - text: One clear H1, with H2 and H3 headings that show the structure
+          lesson: on-page
+        - text: Images are compressed, sized, and have useful alt text and width and height set
+          lesson: on-page
+        - text: The URL is short, readable and final
+          lesson: site-structure
+    - name: Links and technical
+      items:
+        - text: The page links to related pages on the site with descriptive anchor text
+          lesson: site-structure
+        - text: Two or three existing relevant pages link to the new page
+          lesson: site-structure
+        - text: The page is indexable, with no stray noindex and a self referencing canonical
+          lesson: indexing
+        - text: Structured data, if used, matches the visible content and passes the Rich Results Test
+          lesson: structured-data
+        - text: The page works and reads well on a phone
+          lesson: page-experience
+
+- id: technical-audit
+  title: Technical audit
+  intro: The technical layers of the audit process, in the order to check them.
+  groups:
+    - name: Crawling
+      items:
+        - text: robots.txt does not block important pages, CSS or JavaScript
+          lesson: crawling
+        - text: The XML sitemap lists only canonical, indexable URLs that return 200, and is submitted in Search Console
+          lesson: crawling
+        - text: Crawl Stats show no rise in server errors or response times
+          lesson: crawling
+        - text: Filter and parameter URLs are not creating endless crawlable combinations
+          lesson: crawling
+    - name: Indexing
+      items:
+        - text: Every page excluded in the Page indexing report is excluded on purpose
+          lesson: indexing
+        - text: No important page carries noindex
+          lesson: indexing
+        - text: Canonical tags, redirects, sitemaps and internal links all point to the same preferred URLs
+          lesson: indexing
+        - text: Removed pages return 404 or 410, and there are no soft 404s
+          lesson: indexing
+        - text: Redirects go straight to the destination, with no chains or loops
+          lesson: indexing
+        - text: Only one version of the site resolves (https, with or without www), and the others redirect
+          lesson: indexing
+    - name: Structure and rendering
+      items:
+        - text: Important pages are within a few clicks of the home page
+          lesson: site-structure
+        - text: There are no orphan pages among those that should rank
+          lesson: site-structure
+        - text: Links are real anchor elements with href attributes
+          lesson: javascript-seo
+        - text: The rendered HTML in URL Inspection contains the main content, links and metadata
+          lesson: javascript-seo
+    - name: Experience and markup
+      items:
+        - text: The Core Web Vitals report shows no failing URL groups, or there is a plan for each one
+          lesson: page-experience
+        - text: The mobile version has the same content as desktop
+          lesson: page-experience
+        - text: The whole site is served over HTTPS
+          lesson: page-experience
+        - text: Structured data has no errors and uses only supported types
+          lesson: structured-data
+        - text: hreflang is reciprocal and points to canonical URLs, if the site has language versions
+          lesson: international-seo
+
+- id: migration
+  title: Site migration
+  intro: For domain changes, redesigns, platform changes and URL restructures. Most lost traffic after a migration comes from skipped steps here.
+  groups:
+    - name: Before
+      items:
+        - text: Record a baseline of clicks, impressions, rankings and indexed pages
+          lesson: measuring
+        - text: Crawl the old site and export every URL, including those from the sitemap and from Search Console
+          lesson: seo-audit
+        - text: Map every old URL to its closest new equivalent, one to one
+          lesson: indexing
+        - text: Check that the new site keeps the content, titles, internal links and structured data of important pages
+          lesson: on-page
+        - text: Block the staging site from search with a password, not just robots.txt
+          lesson: indexing
+    - name: Launch day
+      items:
+        - text: Put 301 redirects live for every mapped URL, and test a sample
+          lesson: indexing
+        - text: Remove any noindex or password left over from staging
+          lesson: indexing
+        - text: Update canonical tags, hreflang and internal links to the new URLs
+          lesson: indexing
+        - text: Submit the new sitemap. For a domain move, verify the new domain and use the Change of Address tool
+          lesson: crawling
+        - text: Check that analytics tracking works on the new site
+          lesson: measuring
+    - name: After
+      items:
+        - text: Watch Page indexing, Crawl Stats and 404 errors daily for the first weeks
+          lesson: indexing
+        - text: Fix redirect errors and unmapped URLs as they appear
+          lesson: indexing
+        - text: Ask sites with important links to update them to the new URLs
+          lesson: earning-links
+        - text: Keep redirects in place for at least a year, and longer if possible
+          lesson: indexing
+
+- id: local-setup
+  title: Local business setup
+  intro: For any business that serves customers in person or in a specific area.
+  groups:
+    - name: Business Profile
+      items:
+        - text: The profile is claimed and verified
+          lesson: local-ranking
+        - text: The business name matches real signage, with no added keywords
+          lesson: local-ranking
+        - text: The primary category is as specific as possible, and additional categories are accurate
+          lesson: local-ranking
+        - text: The address is shown, or hidden with service areas set if customers are not served there
+          lesson: local-ranking
+        - text: Hours, special hours, phone and website link are correct
+          lesson: local-ranking
+        - text: Services or products, attributes, a plain description and real photos are added
+          lesson: local-ranking
+    - name: Reviews
+      items:
+        - text: There is a routine for asking every customer for a review, with a direct link
+          lesson: reviews-and-citations
+        - text: No incentives and no review gating
+          lesson: reviews-and-citations
+        - text: Reviews get replies, especially negative ones
+          lesson: reviews-and-citations
+    - name: Consistency and website
+      items:
+        - text: Name, address and phone are identical on the website, the main maps platforms and key directories
+          lesson: reviews-and-citations
+        - text: The website shows NAP, a map, directions and hours
+          lesson: reviews-and-citations
+        - text: LocalBusiness structured data is added
+          lesson: structured-data
+        - text: Each branch has a location page with genuinely local content
+          lesson: reviews-and-citations
+
+- id: link-campaign
+  title: Link earning campaign
+  intro: For a planned effort to earn links to a specific asset or page.
+  groups:
+    - name: Preparation
+      items:
+        - text: The asset is genuinely worth citing, such as original data, a tool or the best explanation available
+          lesson: earning-links
+        - text: You researched who links to similar assets and competitors
+          lesson: earning-links
+        - text: You have a short list of relevant recipients, with a reason each one would care
+          lesson: earning-links
+    - name: Outreach
+      items:
+        - text: Every message is personal, short, and explains the value to the recipient
+          lesson: earning-links
+        - text: There is at most one follow up per person
+          lesson: earning-links
+        - text: No payment, gifts or swaps in exchange for followed links
+          lesson: link-risks
+    - name: Follow through
+      items:
+        - text: Paid placements and sponsorships use rel="sponsored"
+          lesson: how-links-work
+        - text: New referring domains and the target page's rankings are tracked
+          lesson: earning-links
+        - text: Unlinked mentions are found and followed up
+          lesson: earning-links

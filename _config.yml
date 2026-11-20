@@ -1,52 +1,43 @@
 title: SEO Reference Guide
-description: A comprehensive SEO reference covering every discipline — from fundamentals to advanced tactics.
+tagline: Learn search engine optimization step by step
+description: A free, structured course on search engine optimization. Learn how Google finds, understands and ranks pages, then work through technical SEO, content, links, local search and measurement in order.
+url: "https://saeed.cool"
 baseurl: "/SEO-RG"
-url: "https://saeeedhany.github.io"
 author: Saeed
+lang: en
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
   input: GFM
-  auto_ids: false
+  hard_wrap: false
+  auto_ids: true
 
-# Collections
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
 collections:
-  chapters:
+  lessons:
     output: true
-    permalink: /chapters/:name/
+    permalink: /learn/:name/
 
-# Posts
-permalink: /blog/:year/:month/:day/:title/
-
-# Defaults
 defaults:
   - scope:
       path: ""
-      type: "chapters"
     values:
-      layout: "default"
+      layout: default
   - scope:
       path: ""
-      type: "posts"
+      type: lessons
     values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+      layout: lesson
 
-# Keep files
-keep_files:
-  - pdfs
-
-# Exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - "*.sh"
-  - node_modules
   - vendor
+  - .remember
+  - docs

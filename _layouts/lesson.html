@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% assign ids = "" %}{% for m in site.data.course %}{% for id in m.lessons %}{% assign ids = ids | append: id | append: "," %}{% endfor %}{% endfor %}{% assign ids = ids | split: "," %}
+{% assign idx = 0 %}{% for id in ids %}{% if id == page.slug %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev_idx = idx | minus: 1 %}{% assign next_idx = idx | plus: 1 %}
+{% if idx > 0 %}{% assign prev_id = ids[prev_idx] %}{% assign prev = site.lessons | where: "slug", prev_id | first %}{% endif %}
+{% if next_idx < ids.size %}{% assign next_id = ids[next_idx] %}{% assign next = site.lessons | where: "slug", next_id | first %}{% endif %}
+{% for m in site.data.course %}{% if m.lessons contains page.slug %}{% assign mod = m %}{% assign mod_num = forloop.index %}{% endif %}{% endfor %}
+{% assign words = content | strip_html | number_of_words %}{% assign minutes = words | divided_by: 210 | plus: 1 %}
+<div class="lesson-grid">
+  <article class="lesson">
+    <header class="lesson-head">
+      <p class="where"><a href="{{ '/' | relative_url }}#module-{{ mod_num }}"><span>{{ mod_num }}</span>{{ mod.title }}</a>Lesson {{ idx | plus: 1 }} of {{ ids.size }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="lede">{{ page.description }}</p>
+      <div class="lesson-meta">
+        <span class="read">{% include icon.html name="clock" px=15 %}{{ minutes }} minute read</span>
+        <nav class="segments" aria-label="Lessons in this module">
+          {% for id in mod.lessons %}{% assign l = site.lessons | where: "slug", id | first %}<a href="{{ l.url | relative_url }}" data-lesson="{{ id }}" title="{{ l.title }}"{% if id == page.slug %} aria-current="page"{% endif %}><span class="sr">{{ l.title }}</span></a>{% endfor %}
+        </nav>
+      </div>
+    </header>
+    {% if page.outcomes %}
+    <section class="outcomes" aria-labelledby="outcomes-h">
+      <h2 id="outcomes-h">After this lesson you will be able to</h2>
+      <ul>{% for o in page.outcomes %}<li>{% include icon.html name="check" %}<span>{{ o }}</span></li>{% endfor %}</ul>
+    </section>
+    {% endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+    {% if page.takeaways %}
+    <section class="takeaways" aria-labelledby="takeaways-h">
+      <h2 id="takeaways-h">Key points</h2>
+      <ol>{% for t in page.takeaways %}<li><span>{{ t | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>{% endfor %}</ol>
+    </section>
+    {% endif %}
+    {% if page.check %}
+    <section class="check" aria-labelledby="check-h">
+      <h2 id="check-h">Check yourself</h2>
+      <div class="check-list">
+        {% for c in page.check %}
+        <details>
+          <summary><span>{{ c.q | smartify }}</span><span class="toggle"><span class="show">Show answer</span><span class="hide">Hide</span>{% include icon.html name="chevron-down" px=14 %}</span></summary>
+          <div class="answer">{{ c.a | markdownify }}</div>
+        </details>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+    <div class="complete">
+      <button class="mark-complete" type="button" data-lesson="{{ page.slug }}" aria-pressed="false">
+        <span class="circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <span data-label>Mark lesson complete</span>
+      </button>
+    </div>
+    <nav class="pager" aria-label="Lessons">
+      {% if prev %}<a class="prev" href="{{ prev.url | relative_url }}" rel="prev"><small>{% include icon.html name="arrow-left" px=14 %}Previous</small><strong>{{ prev.title }}</strong></a>{% endif %}
+      {% if next %}<a class="next" href="{{ next.url | relative_url }}" rel="next"><small>Next lesson{% include icon.html name="arrow-right" px=14 %}</small><strong>{{ next.title }}</strong></a>{% else %}<a class="next" href="{{ '/checklists/' | relative_url }}"><small>You finished the course{% include icon.html name="arrow-right" px=14 %}</small><strong>Put it to work with the checklists</strong></a>{% endif %}
+    </nav>
+  </article>
+  <aside class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol class="toc-list" data-toc><li class="toc-marker" aria-hidden="true"></li></ol>
+  </aside>
+</div>
