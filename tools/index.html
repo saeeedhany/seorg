@@ -1,0 +1,17 @@
+---
+title: Free SEO tools
+description: Free SEO tools that run in your browser. Preview search snippets, test robots.txt rules, generate structured data and build hreflang tags, each linked to the lesson that explains it.
+permalink: /tools/
+---
+{% assign tools = site.pages | where: "layout", "tool" | sort: "title" %}
+<div class="page page-tool">
+  <header class="tool-head">
+    <h1 class="page-title">Tools</h1>
+    <p class="lede">Small tools for the jobs the lessons describe. They run entirely in your browser, so nothing you type is sent anywhere.</p>
+  </header>
+  <ul class="tool-list">
+    {% for t in tools %}{% assign l = site.lessons | where: "slug", t.lesson | first %}
+    <li><a href="{{ t.url | relative_url }}"><span class="ref-icon">{% include icon.html name="tool" px=20 %}</span><strong>{{ t.title }}</strong><span class="d">{{ t.description }}</span>{% if l %}<span class="l">Explained in {{ l.short | default: l.title }}</span>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</div>

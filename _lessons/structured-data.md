@@ -19,7 +19,7 @@ check:
 practice:
   title: Test your structured data
   time: 15 minutes
-  tools: Rich Results Test, Search Console
+  tools: 'Rich Results Test, Search Console and the [structured data generator](/tools/structured-data-generator/)'
   steps:
   - Run two of your main page types through the **Rich Results Test** and list the structured data types it detects.
   - Note every error and warning, and which rich results each page is eligible for.

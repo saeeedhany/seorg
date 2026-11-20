@@ -30,6 +30,7 @@
   <ol>
     <li><a href="{{ '/glossary/' | relative_url }}"{% if page.url == '/glossary/' %} aria-current="page"{% endif %}>{% include icon.html name="book" %}Glossary</a></li>
     <li><a href="{{ '/checklists/' | relative_url }}"{% if page.url == '/checklists/' %} aria-current="page"{% endif %}>{% include icon.html name="list" %}Checklists</a></li>
+    <li><a href="{{ '/tools/' | relative_url }}"{% if page.url contains '/tools/' %} aria-current="page"{% endif %}>{% include icon.html name="tool" %}Tools</a></li>
     <li><a href="{{ '/algorithm-updates/' | relative_url }}"{% if page.url == '/algorithm-updates/' %} aria-current="page"{% endif %}>{% include icon.html name="history" %}Google update history</a></li>
   </ol>
 </section>

@@ -299,6 +299,32 @@
     }
   }
 
+  $$("[data-copy]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var src = document.getElementById(btn.getAttribute("data-copy"));
+      if (!src) return;
+      var label = $("span", btn);
+      var done = function () {
+        btn.classList.add("is-done");
+        if (label) label.textContent = "Copied";
+        setTimeout(function () { btn.classList.remove("is-done"); if (label) label.textContent = "Copy"; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(src.textContent).then(done, function () { selectText(src); });
+      } else {
+        selectText(src);
+      }
+    });
+  });
+
+  function selectText(el) {
+    var r = document.createRange();
+    r.selectNodeContents(el);
+    var sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(r);
+  }
+
   var dialog = $(".search-dialog");
   if (dialog && typeof dialog.showModal === "function") {
     var input = $("input", dialog);

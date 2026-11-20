@@ -1,0 +1,37 @@
+---
+layout: tool
+title: hreflang builder
+description: List the language and country versions of a page and get correct hreflang tags for the page head, plus the same set as a sitemap, with the codes checked as you type.
+permalink: /tools/hreflang-builder/
+lesson: international-seo
+script: hreflang-builder
+note: Every version must carry the full set of tags, including a tag for itself, and every URL must be the canonical version that returns status 200. Pick one method, head tags or the sitemap, and use it consistently.
+---
+<div class="tool-grid">
+  <section class="tool-panel" aria-labelledby="hl-in">
+    <h2 id="hl-in">Versions of the page</h2>
+    <div class="hl-head" aria-hidden="true"><span>Language</span><span>Country</span><span>URL</span><span></span></div>
+    <div class="hl-rows" data-rows></div>
+    <div class="tool-actions"><button class="btn btn-sm" type="button" data-add>{% include icon.html name="plus" px=14 %}Add a version</button></div>
+    <div class="field field-spaced">
+      <label for="hl-default">Fallback page (x-default)</label>
+      <input id="hl-default" class="code" type="url" value="https://example.com/pricing/" autocomplete="off" spellcheck="false">
+    </div>
+  </section>
+  <section class="tool-panel" aria-labelledby="hl-out">
+    <h2 id="hl-out">Output
+      <span class="seg" role="group" aria-label="Format"><button type="button" data-format="html" aria-pressed="true">Head tags</button><button type="button" data-format="xml" aria-pressed="false">Sitemap</button></span>
+    </h2>
+    <pre class="code-out" id="hl-code" tabindex="0"></pre>
+    <div class="tool-actions"><button class="copy-btn" type="button" data-copy="hl-code">{% include icon.html name="copy" px=14 %}<span>Copy</span></button></div>
+    <ul class="msgs" data-msgs aria-live="polite"></ul>
+  </section>
+</div>
+<template id="hl-row">
+  <div class="hl-row">
+    <div><input class="input code" data-lang type="text" maxlength="3" placeholder="en" aria-label="Language code" autocomplete="off" spellcheck="false"><small data-lang-name></small></div>
+    <div><input class="input code" data-region type="text" maxlength="2" placeholder="optional" aria-label="Country code, optional" autocomplete="off" spellcheck="false"><small data-region-name></small></div>
+    <div class="hl-url"><input class="input code" data-url type="url" placeholder="https://example.com/en/pricing/" aria-label="URL" autocomplete="off" spellcheck="false"></div>
+    <button class="icon-only" type="button" data-remove aria-label="Remove this version">{% include icon.html name="x" px=14 %}</button>
+  </div>
+</template>

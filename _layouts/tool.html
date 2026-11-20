@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign l = site.lessons | where: "slug", page.lesson | first %}
+<div class="page page-tool">
+  <header class="tool-head">
+    <p class="where"><a href="{{ '/tools/' | relative_url }}"><span>{% include icon.html name="tool" px=12 %}</span>Tools</a>{% if l %}<span>Explained in <a class="inline-link" href="{{ l.url | relative_url }}">{{ l.short | default: l.title }}</a></span>{% endif %}</p>
+    <h1 class="page-title">{{ page.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+  </header>
+  {{ content }}
+  {% if page.note %}<p class="tool-note">{% include icon.html name="info" px=16 %}<span>{{ page.note }}</span></p>{% endif %}
+</div>
+<script src="{{ '/assets/js/tools/' | append: page.script | append: '.js' | relative_url }}" defer></script>

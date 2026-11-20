@@ -23,7 +23,7 @@ check:
 practice:
   title: Read a real robots.txt and sitemap
   time: 15 minutes
-  tools: A browser, Search Console
+  tools: 'A browser, Search Console and the [robots.txt tester](/tools/robots-txt-tester/)'
   steps:
   - Open `yourdomain.com/robots.txt`. Write down every `Disallow` rule and which part of the site it blocks.
   - Check that no rule blocks CSS, JavaScript, or a section you want to appear in search results.

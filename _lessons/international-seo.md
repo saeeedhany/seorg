@@ -19,7 +19,7 @@ check:
 practice:
   title: Check hreflang on one page
   time: 20 minutes
-  tools: A browser
+  tools: 'A browser and the [hreflang builder](/tools/hreflang-builder/)'
   steps:
   - Open the page source and list every `hreflang` annotation, with its language code and URL.
   - Open each alternate URL and check that it returns 200, is in the right language, and lists the same set of annotations, including itself.

@@ -19,7 +19,7 @@ check:
 practice:
   title: Rewrite three titles and descriptions
   time: 30 minutes
-  tools: Search Console, a browser
+  tools: 'Search Console, a browser and the [search snippet preview](/tools/snippet-preview/)'
   steps:
   - In Search Console, open **Performance**, then **Pages**, and show CTR. Find three pages with many impressions and a low CTR for their position.
   - Search each page's main query and look at how Google shows your title and snippet. Note any rewrite.

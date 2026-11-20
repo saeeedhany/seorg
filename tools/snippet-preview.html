@@ -1,0 +1,49 @@
+---
+layout: tool
+title: Search snippet preview
+description: See how a title and meta description are likely to look in search results on desktop and on a phone, with truncation measured in pixels rather than characters.
+permalink: /tools/snippet-preview/
+lesson: on-page
+script: snippet-preview
+note: Google measures titles and snippets by width, not by character count, and the exact limits change with the device and screen. Treat this preview as a close estimate. Google may also rewrite a title or snippet when it better matches a search.
+---
+<div class="tool-grid">
+  <section class="tool-panel" aria-labelledby="sp-in">
+    <h2 id="sp-in">Your page</h2>
+    <div class="field">
+      <label for="sp-title">Title <span class="hint" data-hint="title"></span></label>
+      <input id="sp-title" type="text" value="How to Repot a Snake Plant (Step by Step) | Leaf & Root" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="sp-desc">Meta description <span class="hint" data-hint="desc"></span></label>
+      <textarea id="sp-desc">Repot a snake plant in six steps: when to do it, which pot and soil to use, and how to avoid root rot afterwards. Includes photos of each step.</textarea>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="sp-url">URL</label>
+        <input id="sp-url" type="url" value="https://leafandroot.example/guides/repot-snake-plant/" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="sp-site">Site name</label>
+        <input id="sp-site" type="text" value="Leaf & Root" autocomplete="off">
+      </div>
+    </div>
+  </section>
+  <section class="tool-panel" aria-labelledby="sp-out">
+    <h2 id="sp-out">Preview
+      <span class="seg" role="group" aria-label="Device"><button type="button" data-device="desktop" aria-pressed="true">Desktop</button><button type="button" data-device="mobile" aria-pressed="false">Mobile</button></span>
+    </h2>
+    <div class="snip-stage">
+      <div class="snip" data-snip>
+        <div class="snip-site"><span class="snip-fav" data-fav>L</span><span><span class="snip-name" data-name></span><span class="snip-url" data-url></span></span></div>
+        <p class="snip-title" data-title></p>
+        <p class="snip-desc" data-desc></p>
+      </div>
+    </div>
+    <div class="meter">
+      <div class="meter-row"><span>Title width</span><span class="meter-bar"><span data-bar="title"></span></span><b data-px="title"></b></div>
+      <div class="meter-row"><span>Snippet width</span><span class="meter-bar"><span data-bar="desc"></span></span><b data-px="desc"></b></div>
+    </div>
+    <ul class="msgs" data-msgs aria-live="polite"></ul>
+  </section>
+</div>

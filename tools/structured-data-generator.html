@@ -1,0 +1,31 @@
+---
+layout: tool
+title: Structured data generator
+description: Fill in a short form and get JSON-LD for an article, product, local business, breadcrumb trail or organization, ready to paste into your page.
+permalink: /tools/structured-data-generator/
+lesson: structured-data
+script: structured-data-generator
+note: Mark up only what visitors can see on the page, and keep values such as prices and ratings in sync with it. Structured data makes a page eligible for rich results but does not guarantee them, and it does not raise rankings by itself. Always check the result in Google's Rich Results Test.
+---
+<div class="tool-grid">
+  <section class="tool-panel" aria-labelledby="sd-in">
+    <h2 id="sd-in">Details</h2>
+    <div class="field">
+      <label for="sd-type">Type</label>
+      <select id="sd-type">
+        <option value="Article">Article</option>
+        <option value="Product">Product</option>
+        <option value="LocalBusiness">Local business</option>
+        <option value="BreadcrumbList">Breadcrumb</option>
+        <option value="Organization">Organization</option>
+      </select>
+    </div>
+    <div data-fields></div>
+  </section>
+  <section class="tool-panel" aria-labelledby="sd-out">
+    <h2 id="sd-out">JSON-LD <button class="copy-btn" type="button" data-copy="sd-code">{% include icon.html name="copy" px=14 %}<span>Copy</span></button></h2>
+    <pre class="code-out" id="sd-code" tabindex="0"></pre>
+    <ul class="msgs" data-msgs aria-live="polite"></ul>
+    <div class="tool-actions"><a class="btn btn-sm" href="https://search.google.com/test/rich-results" rel="noopener">Open the Rich Results Test{% include icon.html name="arrow-right" px=14 %}</a></div>
+  </section>
+</div>

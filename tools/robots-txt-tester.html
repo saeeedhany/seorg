@@ -1,0 +1,54 @@
+---
+layout: tool
+title: robots.txt tester
+description: Paste a robots.txt file, a URL and a crawler, and see whether the URL may be crawled, which rule decided it, and which group of rules applied.
+permalink: /tools/robots-txt-tester/
+lesson: crawling
+script: robots-txt-tester
+note: This tester follows Google's documented rules. The most specific user agent group applies, the longest matching path wins, Allow wins a tie, and the * and $ wildcards are supported. Other crawlers may interpret edge cases differently. Remember that robots.txt controls crawling, not indexing.
+---
+<div class="tool-grid">
+  <section class="tool-panel" aria-labelledby="rt-in">
+    <h2 id="rt-in">Rules and URL</h2>
+    <div class="field">
+      <label for="rt-txt">robots.txt</label>
+      <textarea id="rt-txt" class="code" rows="12" spellcheck="false">User-agent: *
+Disallow: /cart/
+Disallow: /search
+Allow: /search/help
+Disallow: /*?sort=
+
+User-agent: Googlebot-Image
+Disallow: /private-images/
+
+Sitemap: https://example.com/sitemap.xml</textarea>
+    </div>
+    <div class="field">
+      <label for="rt-url">URL or path to test</label>
+      <input id="rt-url" class="code" type="text" value="https://example.com/search/help?topic=returns" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="rt-ua">Crawler</label>
+        <select id="rt-ua">
+          <option value="googlebot">Googlebot</option>
+          <option value="googlebot-image">Googlebot-Image</option>
+          <option value="googlebot-news">Googlebot-News</option>
+          <option value="bingbot">Bingbot</option>
+          <option value="gptbot">GPTBot</option>
+          <option value="custom">Other</option>
+        </select>
+      </div>
+      <div class="field" data-custom hidden>
+        <label for="rt-custom">User agent token</label>
+        <input id="rt-custom" class="code" type="text" placeholder="examplebot" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </section>
+  <section class="tool-panel" aria-labelledby="rt-out">
+    <h2 id="rt-out">Result</h2>
+    <div class="verdict" data-verdict aria-live="polite"></div>
+    <ol class="rt-lines" data-lines aria-label="robots.txt with the deciding lines highlighted"></ol>
+    <ul class="msgs" data-msgs></ul>
+  </section>
+</div>
